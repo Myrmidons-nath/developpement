@@ -1,43 +1,18 @@
-
-from math import fabs
 from tkinter import *
-import random
+import tkinter #importation de la biblioteque
+
+fenetre = Tk() #creation de la fenetre contenus dans la variable fenetre
+fenetre.title("racourcis") #je definis le titre de la fenetre
 
 
-jeu_longueur=700
-jeu_largeur=700
-speed=50
-espace=50
-corps = 3
-couleur_serpend = "#00FF00"
-couleur_bouffe = "FF0000"
-couleur_fond = "000000"
+label1 = Label(fenetre, text="mon premier texte", )
 
 
 
-class serpent:
-    pass
-class bouffe:
-    pass
 
-def prochain_virage():
-    pass
-def change_direction():
-    pass
-def check_collision():
-    pass
-
-def fin():
-    pass
-
-
-
-fenetre = Tk()
-fenetre.title('snake')
+fenetre.geometry("500x500")
+fenetre.iconbitmap('image.ico')
 fenetre.resizable(False, False)
-
-
-
-
-
-fenetre.mainloop()
+fenetre.config(bg="#4BA7C2")
+print(dir(tkinter.Label))
+fenetre.mainloop() #affichage de la fenetre 

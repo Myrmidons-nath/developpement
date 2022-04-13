@@ -8,8 +8,6 @@ fenetre.title("racourcis") #je definis le titre de la fenetre
 label1 = Label(fenetre, text="mon premier texte", )
 label1.pack()
 
-
-
 fenetre.geometry("500x500")
 fenetre.iconbitmap('image.ico')
 fenetre.resizable(False, False)

@@ -1,6 +1,5 @@
-from tkinter import *
+from tkinter import *#importation de la biblioteque
 
-from cv2 import exp #importation de la biblioteque
 
 fenetre = Tk() #creation de la fenetre contenus dans la variable fenetre
 fenetre.title("racourcis") #je definis le titre de la fenetre

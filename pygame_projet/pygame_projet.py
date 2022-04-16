@@ -4,7 +4,9 @@ pygame.init() # creation de la fenetre
 
 
 ecran = pygame.display.set_mode((1000, 800)) #dimention de la fenetre
+pygame.display.set_caption("nom")
 image = pygame.image.load(r"C:\Users\Nathan\Documents\github\git\pygame_projet\image_bois.png").convert()
+
 temps = pygame.time.Clock()
 jeu = True 
 x = 200

@@ -13,7 +13,7 @@ label2.pack()
 
 frame.pack(expand=YES)
 fenetre.geometry("800x500")
-fenetre.iconbitmap(r'C:\Users\Nathan\Documents\github\git\python\image.ico')
+fenetre.iconbitmap(r'C:\Users\Nathan\Documents\github\git\python\tkinter_projet\image.ico')
 fenetre.resizable(False, False)
 fenetre.config(bg="#4BA7C2")
 fenetre.mainloop() #affichage de la fenetre 

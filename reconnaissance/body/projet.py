@@ -6,7 +6,7 @@ mpDraw = mp.solutions.drawing_utils
 pose = mp_pose.Pose()
 
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(r'C:\Users\Nathan\Documents\github\git\reconnaissance\face\video.mp4')
 fps = cap.get(cv2.CAP_PROP_FPS)
 while True:
     sucess, img = cap.read()

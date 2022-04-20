@@ -5,7 +5,7 @@ import time
 
 
 class hand_detector:
-    def __init__(self, mode=False, maxHands=5, detectionCon=0.5, trackCon=0.5):
+    def __init__(self, mode=False, maxHands=5, detectionCon=0.75, trackCon=0.75):
         self.mode = mode
         self.maxHands = maxHands
         self.detectionCon = detectionCon
@@ -36,8 +36,8 @@ class hand_detector:
                 cx, cy = int(lm.x * w), int(lm.y * h)
                 lm_list.append([id, cx, cy])                           
                 if draw:
-                    if id == 4 or id == 8 or id == 12 or id == 16 or id == 20:
-                        cv2.circle(frame, (cx, cy), 7, (255, 255, 0), cv2.FILLED)
+                    if id == 4 or id == 8:
+                        cv2.circle(frame, (cx, cy), 10, (255, 255, 0), cv2.FILLED)
         return lm_list
 def main(input_list_choice, choice):
     pTime = 0

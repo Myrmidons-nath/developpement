@@ -1,11 +1,8 @@
-from unittest import result
 import mediapipe as mp
 import cv2
 import time
 
 cap = cv2.VideoCapture(0)
-
-
 mpHands = mp.solutions.hands
 hands = mpHands.Hands()
 mpDraws = mp.solutions.drawing_utils
@@ -26,5 +23,3 @@ while True:
                     cv2.circle(frame, (cx, cy), 7, (255, 0, 255), cv2.FILLED)
     cv2.imshow("video", frame)
     cv2.waitKey(1)
-
-
